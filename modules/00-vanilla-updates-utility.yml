@@ -4,8 +4,8 @@ buildflags:
   - --prefix=/usr
 source:
   type: git
-  url: https://github.com/Vanilla-OS/vanilla-updates-utility
-  tag: v1.0.2
+  url: https://github.com/nisel11/vanilla-updates-utility
+  branch: main
 modules:
 - name: vanilla-updates-utility-deps-install
   type: apt
