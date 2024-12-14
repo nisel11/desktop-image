@@ -1,0 +1,23 @@
+name: apx
+type: go
+source:
+  type: git
+  url: https://github.com/nisel11/apx.git
+  branch: main
+buildVars:
+  GO_OUTPUT_BIN: /usr/bin/apx
+modules:
+- name: remove-old-apx
+  type: shell
+  commands:
+    - rm /usr/bin/apx
+- name: apx-deps-install
+  type: apt
+  source:
+    packages:
+    - build-essential
+    - make
+    - gettext
+    - libadwaita-1-dev
+    - meson
+    - golang-go
