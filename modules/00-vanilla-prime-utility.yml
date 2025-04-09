@@ -1,4 +1,3 @@
-
 name: vanilla-prime-utility
 type: dpkg-buildpackage
 source:
@@ -10,9 +9,9 @@ source:
 modules:
 - name: vanilla-prime-utility-deps-install
   type: apt
-  source:
-    packages:
-    - build-essential
-    - gettext
-    - libadwaita-1-dev
-    - meson
+  sources:
+    - packages:
+      - build-essential
+      - gettext
+      - libadwaita-1-dev
+      - meson
